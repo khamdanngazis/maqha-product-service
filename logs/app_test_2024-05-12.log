@@ -1,0 +1,7 @@
+time="2024-05-12T11:45:38+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=f9925652-cb0f-4cc0-9104-4cff5ee93ac8 Status=400
+time="2024-05-12T11:47:12+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=be85507d-6712-42e7-b7e7-a933f1926b9d Status=400
+time="2024-05-12T11:49:27+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=dea3eb5e-e4d9-43f8-b66d-2ed17f49e3c1 Status=400
+time="2024-05-12T11:50:06+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=f31fddbd-e8c9-4f88-b209-878b5bc24924 Status=400
+time="2024-05-12T11:51:09+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=c5de78e9-5105-49aa-95e7-d3752047e706 Status=400
+time="2024-05-12T11:51:40+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=c4d26ee9-171d-477a-b286-1463c09e450c Status=200
+time="2024-05-12T11:57:31+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=1d1959d9-9de6-4038-a674-2a25e51f0a85 Status=200

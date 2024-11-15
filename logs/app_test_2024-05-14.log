@@ -1,0 +1,28 @@
+time="2024-05-14T09:13:15+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=fd40c16d-d80d-447d-9d8d-2edea637e6da Status=200
+time="2024-05-14T09:14:07+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=6cd58d80-32bb-4987-bab2-6b3432b87962 Status=200
+time="2024-05-14T09:16:17+07:00" level=info msg="Outgoing response" Body="{\"code\":203,\"message\":\"Invalid Request Key: 'ProductCategoryRequest.Category' Error:Field validation for 'Category' failed on the 'required' tag\"}\n" RequestID=490e31bd-3403-44e2-9b00-33710717352a Status=400
+time="2024-05-14T09:16:45+07:00" level=info msg="Outgoing response" Body="{\"code\":203,\"message\":\"Invalid Request Key: 'ProductCategoryRequest.Category' Error:Field validation for 'Category' failed on the 'required' tag\"}\n" RequestID=0e4f4769-c069-4888-a3c5-cf44d03d8963 Status=400
+time="2024-05-14T09:17:25+07:00" level=info msg="Outgoing response" Body="{\"code\":203,\"message\":\"Invalid Request Key: 'ProductCategoryRequest.Category' Error:Field validation for 'Category' failed on the 'required' tag\"}\n" RequestID=90146517-df6d-4022-acc2-66602a3dc5ee Status=400
+time="2024-05-14T09:17:51+07:00" level=info msg="Outgoing response" Body="{\"code\":203,\"message\":\"Invalid Request Key: 'ProductCategoryRequest.Category' Error:Field validation for 'Category' failed on the 'required' tag\"}\n" RequestID=24578a06-653a-4b10-8dab-53aee844d243 Status=400
+time="2024-05-14T09:18:33+07:00" level=info msg="Outgoing response" Body="{\"code\":203,\"message\":\"Invalid Request Key: 'ProductCategoryRequest.Category' Error:Field validation for 'Category' failed on the 'required' tag\"}\n" RequestID=d5ff53ee-477a-46e8-8c56-240e0825414e Status=400
+time="2024-05-14T09:48:37+07:00" level=info msg="Outgoing response" Body="404 page not found\n" RequestID=ef933299-d835-4050-ac44-1bdc5d0f38ff Status=404
+time="2024-05-14T09:49:34+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=a38013dc-f965-49b2-b23c-311bfe6c181a Status=200
+time="2024-05-14T09:56:06+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=20e90c48-d9d5-4e1c-8534-0bb9d9aa605e Status=200
+time="2024-05-14T09:57:12+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=40dd5c8d-9707-4769-a937-10cf1bc38dbe Status=200
+time="2024-05-14T09:58:05+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=496f96dc-dca7-45de-9459-6742aacc35f2 Status=200
+time="2024-05-14T10:01:02+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=732c9e3d-3dc5-4b20-a45e-3a0871c8335a Status=200
+time="2024-05-14T10:02:10+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=c29e6c68-0654-4050-a1df-bade3fd35330 Status=200
+time="2024-05-14T10:03:40+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=5d51bf1e-a759-4efc-ac76-0e9e49ff5276 Status=200
+time="2024-05-14T10:05:09+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=73e5461b-64aa-460b-ab67-6e7ed632ca76 Status=200
+time="2024-05-14T10:05:42+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=a87f475f-246d-4e6b-bd61-bc01c00a8564 Status=200
+time="2024-05-14T10:12:18+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=927d0961-73b9-4239-812f-e765a15f25bf Status=400
+time="2024-05-14T10:12:45+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=9b0c1d50-2b8d-4a6a-af13-cb90e8391eba Status=400
+time="2024-05-14T10:14:51+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=38a8096d-3522-4f8f-accc-df9e1914c053 Status=400
+time="2024-05-14T10:15:17+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=968157d6-b602-46cc-83d1-618013141ae0 Status=400
+time="2024-05-14T10:39:57+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=02bda402-efdf-4167-a666-29389a740090 Status=200
+time="2024-05-14T10:41:41+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=e3e805d8-c622-4ff8-a44f-db9ef9754e94 Status=200
+time="2024-05-14T10:42:46+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=053084e8-75dd-47ab-9bd4-f63e68ec90c4 Status=200
+time="2024-05-14T10:45:09+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=c1057f54-d938-457c-b83d-da5b5fa920f6 Status=200
+time="2024-05-14T11:13:30+07:00" level=info msg="Outgoing response" Body="{\"code\":0,\"message\":\"Success\"}\n" RequestID=36c29e2d-f62e-43fe-b979-6c31338531c9 Status=200
+time="2024-05-14T11:22:56+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=e279abce-54e8-41f2-aacf-dc829eec5832 Status=400
+time="2024-05-14T11:23:33+07:00" level=info msg="Outgoing response" Body="{\"code\":202,\"message\":\"Invalid Token\"}\n" RequestID=8a34e5dc-9280-42ba-812f-cc616d963bbc Status=400

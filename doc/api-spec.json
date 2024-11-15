@@ -1,0 +1,450 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "product service",
+        "description": "product management",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8010"
+        }
+    ],
+    "paths": {
+        "/product":{
+            "get": {
+                "description": "Get All Product",
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "header",
+                        "description": "client token"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success login",
+                        "content": {
+                            "application/json" : {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "code" : {
+                                            "type": "number",
+                                            "example":0
+                                        },
+                                        "message" : {
+                                            "type": "string",
+                                            "example" : "Success"
+                                        },
+                                        "data" : {
+                                            "type": "array",
+                                            "items" :{
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "format": "int64",
+                                                        "example": 1
+                                                      },
+                                                      "clientId": {
+                                                        "type": "integer",
+                                                        "format": "int64",
+                                                        "example": 123
+                                                      },
+                                                      "name": {
+                                                        "type": "string",
+                                                        "example": "Electronics"
+                                                      },
+                                                      "isActive": {
+                                                        "type": "boolean",
+                                                        "example": true
+                                                      },
+                                                      "createdAt": {
+                                                        "type": "string",
+                                                        "format": "date-time",
+                                                        "example": "2023-05-16T08:00:00Z"
+                                                      },
+                                                      "products": {
+                                                        "type": "array",
+                                                        "items" :{
+                                                            "properties": {
+                                                                "id": {
+                                                                    "type": "integer",
+                                                                    "format": "int64",
+                                                                    "example": 1
+                                                                },
+                                                                "categoryId": {
+                                                                    "type": "integer",
+                                                                    "format": "int64",
+                                                                    "example": 1
+                                                                },
+                                                                "name": {
+                                                                    "type": "string",
+                                                                    "example": "Smartphone"
+                                                                },
+                                                                "description": {
+                                                                    "type": "string",
+                                                                    "example": "A high-end smartphone with a 6.5-inch display"
+                                                                },
+                                                                "image": {
+                                                                    "type": "string",
+                                                                    "example": "https://example.com/image.jpg"
+                                                                },
+                                                                "price": {
+                                                                    "type": "number",
+                                                                    "format": "float",
+                                                                    "example": 699.99
+                                                                },
+                                                                "isActive": {
+                                                                    "type": "boolean",
+                                                                    "example": true
+                                                                },
+                                                                "createdAt": {
+                                                                    "type": "string",
+                                                                    "format": "date-time",
+                                                                    "example": "2023-05-16T08:00:00Z"
+                                                                }
+                                                            }
+                                                        }
+                                                      }
+                                                }
+                                                
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+
+            "post": {
+                "description": "add product",
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "header",
+                        "description": "token login"
+                    }
+                ],
+                "requestBody": {
+                    "description": "add User",
+                    "content": {
+                        "application/json" : {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer",
+                                        "format": "int64",
+                                        "example": 1
+                                      },
+                                      "category_id": {
+                                        "type": "integer",
+                                        "format": "int64",
+                                        "example": 1
+                                      },
+                                      "name": {
+                                        "type": "string",
+                                        "example": "Smartphone"
+                                      },
+                                      "description": {
+                                        "type": "string",
+                                        "example": "A high-end smartphone with a 6.5-inch display"
+                                      },
+                                      "image": {
+                                        "description": "base64 image (jpg, jpeg, png)",
+                                        "type": "string",
+                                        "example": "base64 image (png, jpg, jpeg)"
+                                      },
+                                      "price": {
+                                        "type": "number",
+                                        "format": "float",
+                                        "example": 699.99
+                                      }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success add product",
+                        "content": {
+                            "application/json" : {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "code" : {
+                                            "type": "number",
+                                            "example":0
+                                        },
+                                        "message" : {
+                                            "type": "string",
+                                            "example" : "Success"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/product/{productID}":{
+            "put" :{
+                "description": "edit product",
+                "parameters": [
+                    {
+                        "name": "productID",
+                        "in": "path",
+                        "description": "productID"
+                    },
+                    {
+                        "name": "token",
+                        "in": "header",
+                        "description": "token login"
+                    }
+                ],
+                "requestBody": {
+                    "description": "edit product",
+                    "content": {
+                        "application/json" : {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                      "category_id": {
+                                        "type": "integer",
+                                        "format": "int64",
+                                        "example": 1
+                                      },
+                                      "name": {
+                                        "type": "string",
+                                        "example": "coffe"
+                                      },
+                                      "description": {
+                                        "type": "string",
+                                        "example": "coffe"
+                                      },
+                                      "image": {
+                                        "description": "base64 image (jpg, jpeg, png)",
+                                        "type": "string",
+                                        "example": "base64 image (png, jpg, jpeg)"
+                                      },
+                                      "price": {
+                                        "type": "number",
+                                        "format": "float",
+                                        "example": 699.99
+                                      }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success edit",
+                        "content": {
+                            "application/json" : {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "code" : {
+                                            "type": "number",
+                                            "example":0
+                                        },
+                                        "message" : {
+                                            "type": "string",
+                                            "example" : "Success"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete" :{
+                "description": "deactivate product",
+                "parameters": [
+                    {
+                        "name": "productID",
+                        "in": "path",
+                        "description": "productID"
+                    },
+                    {
+                        "name": "token",
+                        "in": "header",
+                        "description": "token login"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success edit",
+                        "content": {
+                            "application/json" : {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "code" : {
+                                            "type": "number",
+                                            "example":0
+                                        },
+                                        "message" : {
+                                            "type": "string",
+                                            "example" : "Success"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/caregory": {
+            "post": {
+                "description": "add category",
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "header",
+                        "description": "token login"
+                    }
+                ],
+                "requestBody": {
+                    "description": "add category",
+                    "content": {
+                        "application/json" : {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                      "category": {
+                                        "type": "string",
+                                        "example": "snack"
+                                      }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success add category",
+                        "content": {
+                            "application/json" : {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "code" : {
+                                            "type": "number",
+                                            "example":0
+                                        },
+                                        "message" : {
+                                            "type": "string",
+                                            "example" : "Success"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/caregory/{caregoryID}":{
+            "put": {
+                "description": "Edit caregory",
+                "parameters": [
+                    {
+                        "name": "caregoryID",
+                        "in": "path",
+                        "description": "caregoryID"
+                    },
+                    {
+                        "name": "token",
+                        "in": "header",
+                        "description": "token login"
+                    }
+                ],
+                "requestBody": {
+                    "description": "Edit category",
+                    "content": {
+                        "application/json" : {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                      "category": {
+                                        "type": "string",
+                                        "example": "snack"
+                                      }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success Edit category",
+                        "content": {
+                            "application/json" : {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "code" : {
+                                            "type": "number",
+                                            "example":0
+                                        },
+                                        "message" : {
+                                            "type": "string",
+                                            "example" : "Success"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "deactivate caregory",
+                "parameters": [
+                    {
+                        "name": "caregoryID",
+                        "in": "path",
+                        "description": "caregoryID"
+                    },
+                    {
+                        "name": "token",
+                        "in": "header",
+                        "description": "token login"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success deactivate category",
+                        "content": {
+                            "application/json" : {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "code" : {
+                                            "type": "number",
+                                            "example":0
+                                        },
+                                        "message" : {
+                                            "type": "string",
+                                            "example" : "Success"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

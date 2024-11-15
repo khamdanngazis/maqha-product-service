@@ -1,0 +1,2 @@
+time="2024-02-28T14:23:12+07:00" level=info msg="Load configuration from config/config.yaml"
+time="2024-02-28T14:23:14+07:00" level=fatal msg="Error loading configuration: error connecting to database: dial tcp [::1]:3306: connectex: No connection could be made because the target machine actively refused it."
